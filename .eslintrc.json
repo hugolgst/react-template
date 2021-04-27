@@ -36,30 +36,6 @@
         "semi": [
             "error",
             "never"
-        ],
-        "organize-imports/organize-imports": ["error", {
-            "orderRules": [{
-                "moduleType": "nodeModule",
-                "comment": "Vendor modules"
-            }, {
-                "moduleType": "testModule",
-                "comment": "Test modules",
-                "include": ["src/test/"],
-                "exclude":  ["src/test/utils"]
-            }, {
-                "moduleType": "utilityModule",
-                "comment": "Utility modules",
-                "include": [
-                    "src/shared/constants",
-                    "src/+(shared|server|test)/utils",
-                    "src/server/mock-data",
-                    "src/utils"
-                ]
-            }],
-            "pathAliases": [{
-                "prefix": "<shared>",
-                "resolvesTo": "./src/shared"
-            }]
-          }]
+        ]
     }
 }
