@@ -15,8 +15,8 @@ $ npm run dev
 
 #### Production
 ```bash
-$ next build
-$ next start
+$ npm run build
+$ npm run start
 ```
 
 ## Deploy your own using Vercel
