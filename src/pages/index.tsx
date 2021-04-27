@@ -19,10 +19,11 @@ import React from 'react'
 const Index = (): JSX.Element => (
   <Container height="100vh">
     <Hero />
+    
     <Main>
       <Text>
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>typescript</Code>.
+        Example repository of <Code>Next.js</Code> + <Code>ChakraUI</Code> +{' '}
+        <Code>TypeScript</Code>.
       </Text>
 
       <List spacing={3} my={0}>
@@ -44,13 +45,32 @@ const Index = (): JSX.Element => (
           </ChakraLink>
         </ListItem>
       </List>
+
+      <Text>Do not forget to:</Text>
+      <List spacing={3} my={0}>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="gray.500" />
+          <ChakraLink
+            isExternal
+            href="https://github.com/hugolgst/react-template/blob/master/package.json#L2"
+            flexGrow={1}
+            mr={2}
+          >
+            Update the package name <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+        <ListItem>
+          <ListIcon as={CheckCircleIcon} color="gray.500" />
+          <ChakraLink isExternal href="https://github.com/hugolgst/react-template/blob/master/README.md" flexGrow={1} mr={2}>
+            Update name in the README.md <LinkIcon />
+          </ChakraLink>
+        </ListItem>
+      </List>
     </Main>
+    
+    <CTA />
 
     <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
   </Container>
 )
 

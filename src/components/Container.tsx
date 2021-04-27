@@ -11,7 +11,7 @@ export const Container = (props: FlexProps): JSX.Element => {
   return <Flex
     direction="column"
     alignItems="center"
-    justifyContent="flex-start"
+    justifyContent="space-evenly"
     bg={bgColor[colorMode]}
     color={color[colorMode]}
     {...props}

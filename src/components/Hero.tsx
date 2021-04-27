@@ -10,7 +10,6 @@ export const Hero = ({ title }: HeroProps): JSX.Element => (
   <Flex
     justifyContent="center"
     alignItems="center"
-    height="100vh"
     bgGradient="linear(to-l, #7928CA, #FF0080)"
     bgClip="text"
   >
@@ -19,5 +18,5 @@ export const Hero = ({ title }: HeroProps): JSX.Element => (
 )
 
 Hero.defaultProps = {
-  title: 'Visium-FrontEnd Next.js/TS/ChakraUI',
+  title: 'React Next.js/TS/ChakraUI Template',
 }
