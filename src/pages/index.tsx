@@ -1,21 +1,22 @@
 import {
   Link as ChakraLink,
-  Text,
   Code,
   List,
   ListIcon,
   ListItem,
+  Text,
 } from '@chakra-ui/react'
 import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
+import { Container } from '../components/Container'
+import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { Footer } from '../components/Footer'
+import { Hero } from '../components/Hero'
+import { Main } from '../components/Main'
+import React from 'react'
 
-const Index = () => (
+const Index = (): JSX.Element => (
   <Container height="100vh">
     <Hero />
     <Main>

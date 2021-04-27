@@ -1,6 +1,12 @@
 import { Flex, Heading } from '@chakra-ui/react'
 
-export const Hero = ({ title }: { title: string }) => (
+import React from 'react'
+
+type HeroProps = {
+  title: string
+}
+
+export const Hero = ({ title }: HeroProps): JSX.Element => (
   <Flex
     justifyContent="center"
     alignItems="center"
@@ -8,10 +14,10 @@ export const Hero = ({ title }: { title: string }) => (
     bgGradient="linear(to-l, #7928CA, #FF0080)"
     bgClip="text"
   >
-    <Heading fontSize="6vw">{title}</Heading>
+    <Heading fontSize="5vw">{title}</Heading>
   </Flex>
 )
 
 Hero.defaultProps = {
-  title: 'with-chakra-ui-typescript',
+  title: 'Visium-FrontEnd Next.js/TS/ChakraUI',
 }
