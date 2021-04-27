@@ -19,6 +19,12 @@ $ npm run build
 $ npm run start
 ```
 
+### Docker
+```bash
+$ docker build . -t react-template
+$ docker run -p 3000:3000 react-template
+```
+
 ## Deploy your own using Vercel
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
